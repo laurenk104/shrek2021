@@ -1,0 +1,134 @@
+/* Graphic Design is my passion */
+
+/* Yes, this is the Build-a-Bear font */
+@font-face {
+  font-family: 'Funhouse';
+  src: url('fonts/Funhouse.woff2') format('woff2'),
+      url('fonts/Funhouse.woff') format('woff'),
+      url('fonts/Funhouse.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1, button {
+  font-family: 'Funhouse';
+}
+
+#start {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  margin-top: 40vh;
+}
+
+button {
+  display: inline-block;
+  padding: 0.46em 1.6em;
+  border: 0.1em solid #000000;
+  margin: 0 0.2em 0.2em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 300;
+  color:#000000;
+  text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+  background-color:#FFFFFF;
+  text-align:center;
+  transition: all 0.15s;
+}
+
+button:hover {
+  text-shadow: 0 0 2em rgba(255,255,255,1);
+  color:yellowgreen;
+  border-color:yellowgreen;
+}
+
+.bouncy{
+  animation: bouncy 5s infinite linear;
+  position: relative;
+}
+
+@keyframes bouncy {
+  0%{top:0em}
+  40%{top:0em}
+  43%{top:-0.9em}
+  46%{top:0em}
+  48%{top:-0.4em}
+  50%{top:0em}
+  100%{top:0em;}
+}
+
+footer {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+main {
+  justify-content: space-evenly;
+  height: 70vh;
+  margin: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+#shrek {
+  position: relative;
+  width: 25%;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#real-shrek {
+  height: 90%;
+}
+
+.selected {
+  background-color: yellowgreen;
+}
+
+.hair-position {
+  position: absolute;
+  left: 19%;
+  width: 45%;
+}
+
+.loop-hair {
+  top: 5%;
+}
+
+.dress-position {
+  position: absolute;
+  top: 28%;
+  height: 55%;
+}
+
+#clothes > section {
+  justify-content: space-evenly;
+  align-items: center;
+  flex-shrink: 1;
+  height: 50%;
+}
+
+#clothes {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+  border: 5px solid black;
+  padding: 20px;
+  margin: 20px;
+  width: 70%;
+}
+
+#clothes img {
+  height: 70%;
+}
+
+main, #clothes > section {
+  flex-wrap: nowrap;
+}
+
+main, #clothes > section, #clothes, #shrek {
+  display: flex;
+}
